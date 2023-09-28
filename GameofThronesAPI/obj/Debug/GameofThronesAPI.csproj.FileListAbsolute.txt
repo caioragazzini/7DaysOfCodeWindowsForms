@@ -1,0 +1,10 @@
+C:\Users\caiov\Desktop\Development\7DaysCode\WindowsForm\7DaysOfCodeWindowsForms\GameofThronesAPI\bin\Debug\GameofThronesAPI.exe.config
+C:\Users\caiov\Desktop\Development\7DaysCode\WindowsForm\7DaysOfCodeWindowsForms\GameofThronesAPI\bin\Debug\GameofThronesAPI.exe
+C:\Users\caiov\Desktop\Development\7DaysCode\WindowsForm\7DaysOfCodeWindowsForms\GameofThronesAPI\bin\Debug\GameofThronesAPI.pdb
+C:\Users\caiov\Desktop\Development\7DaysCode\WindowsForm\7DaysOfCodeWindowsForms\GameofThronesAPI\obj\Debug\GameofThronesAPI.csproj.AssemblyReference.cache
+C:\Users\caiov\Desktop\Development\7DaysCode\WindowsForm\7DaysOfCodeWindowsForms\GameofThronesAPI\obj\Debug\GameofThronesAPI.Properties.Resources.resources
+C:\Users\caiov\Desktop\Development\7DaysCode\WindowsForm\7DaysOfCodeWindowsForms\GameofThronesAPI\obj\Debug\GameofThronesAPI.csproj.GenerateResource.cache
+C:\Users\caiov\Desktop\Development\7DaysCode\WindowsForm\7DaysOfCodeWindowsForms\GameofThronesAPI\obj\Debug\GameofThronesAPI.csproj.CoreCompileInputs.cache
+C:\Users\caiov\Desktop\Development\7DaysCode\WindowsForm\7DaysOfCodeWindowsForms\GameofThronesAPI\obj\Debug\GameofThronesAPI.exe
+C:\Users\caiov\Desktop\Development\7DaysCode\WindowsForm\7DaysOfCodeWindowsForms\GameofThronesAPI\obj\Debug\GameofThronesAPI.pdb
+C:\Users\caiov\Desktop\Development\7DaysCode\WindowsForm\7DaysOfCodeWindowsForms\GameofThronesAPI\obj\Debug\GameofThronesAPI.Form1.resources
