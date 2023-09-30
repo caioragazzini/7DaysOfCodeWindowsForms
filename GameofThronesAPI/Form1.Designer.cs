@@ -75,6 +75,7 @@
             this.buscarPersonagensToolStripMenuItem.Name = "buscarPersonagensToolStripMenuItem";
             this.buscarPersonagensToolStripMenuItem.Size = new System.Drawing.Size(124, 20);
             this.buscarPersonagensToolStripMenuItem.Text = "Buscar Personagens";
+            this.buscarPersonagensToolStripMenuItem.Click += new System.EventHandler(this.buscarPersonagensToolStripMenuItem_Click);
             // 
             // meusFavoritosToolStripMenuItem
             // 

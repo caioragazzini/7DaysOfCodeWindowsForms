@@ -31,15 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxNome = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblFamilia = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.imgPersonagem = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPersonagem)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -64,15 +63,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Nome";
             // 
-            // comboBox1
+            // cbxNome
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(85, 114);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(444, 27);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "Selecione seu personagem";
+            this.cbxNome.FormattingEnabled = true;
+            this.cbxNome.Location = new System.Drawing.Point(85, 114);
+            this.cbxNome.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxNome.Name = "cbxNome";
+            this.cbxNome.Size = new System.Drawing.Size(444, 27);
+            this.cbxNome.TabIndex = 2;
+            this.cbxNome.Text = "Selecione seu personagem";
+            this.cbxNome.SelectedIndexChanged += new System.EventHandler(this.cbxNome_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -96,45 +96,34 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Titulo";
             // 
-            // label5
+            // lblFamilia
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(81, 164);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 19);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Familia";
+            this.lblFamilia.AutoSize = true;
+            this.lblFamilia.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFamilia.Location = new System.Drawing.Point(81, 164);
+            this.lblFamilia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFamilia.Name = "lblFamilia";
+            this.lblFamilia.Size = new System.Drawing.Size(0, 19);
+            this.lblFamilia.TabIndex = 5;
             // 
-            // label6
+            // lblTitulo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(81, 203);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 19);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Titulo";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(81, 203);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(0, 19);
+            this.lblTitulo.TabIndex = 6;
             // 
-            // pictureBox1
+            // imgPersonagem
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(576, 114);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(212, 263);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(438, 403);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 35);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.imgPersonagem.Location = new System.Drawing.Point(563, 114);
+            this.imgPersonagem.Margin = new System.Windows.Forms.Padding(4);
+            this.imgPersonagem.Name = "imgPersonagem";
+            this.imgPersonagem.Size = new System.Drawing.Size(225, 282);
+            this.imgPersonagem.TabIndex = 7;
+            this.imgPersonagem.TabStop = false;
             // 
             // button2
             // 
@@ -151,21 +140,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.imgPersonagem);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.lblFamilia);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbxNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
             this.Text = "Buscar seu personagem favorito";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.imgPersonagem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,13 +164,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxNome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblFamilia;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.PictureBox imgPersonagem;
         private System.Windows.Forms.Button button2;
     }
 }
